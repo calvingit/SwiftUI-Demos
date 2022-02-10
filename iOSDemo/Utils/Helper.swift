@@ -28,12 +28,3 @@ extension Bundle {
     }
 }
 
-
-// 计算文本的大小
-func sizeWithText(text: String, font: UIFont, size: CGSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)) -> CGRect {
-    let attributes = [NSAttributedString.Key.font: font]
-
-    return  text.boundingRect(with: size,
-                              options: .usesLineFragmentOrigin,
-                              attributes: attributes, context: nil)
-}

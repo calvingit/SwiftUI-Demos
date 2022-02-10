@@ -1,8 +1,8 @@
 //
-//  Color+Hex.swift
+//  Color+Extensions.swift
 //  iOSDemo
 //
-//  Created by zw on 2022/2/3.
+//  Created by zhangwen on 2022/2/10.
 //
 
 import SwiftUI
@@ -15,3 +15,11 @@ extension Color {
         self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
     }
 }
+
+extension Color {
+    // 绿色
+    static let primaryGreen = Color(0x55C4BD)
+    // 灰色
+    static let divider = Color(0x979797)
+}
+
