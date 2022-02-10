@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-
-
-
-struct MarginView_Previews: PreviewProvider {
-    static var previews: some View {
+struct HealthCare: View {
+    var body: some View {
         // 房间长度
         let roomWidth: CGFloat = 200.0
         // 房间宽度
@@ -70,13 +67,20 @@ struct MarginView_Previews: PreviewProvider {
                     .offset(x: 40, y: 0)
 
                 SubRegionView(CGRect(x: 20, y: 20, width: 50, height: 50), name: "书桌", widthText: "2m", heightText: "1m", isSelected: true)
-                    
+
             }
             .frame(width: 200, height: 200, alignment: .center)
             .background(Color(UIColor.green.withAlphaComponent(0.1)))
-     
-                
+
+
         }
-        .previewLayout(.sizeThatFits)
+    }
+}
+
+
+struct HealthCare_Previews: PreviewProvider {
+    static var previews: some View {
+        HealthCare()
+            .previewLayout(.sizeThatFits)
     }
 }

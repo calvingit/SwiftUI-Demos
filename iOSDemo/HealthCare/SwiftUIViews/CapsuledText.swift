@@ -17,3 +17,10 @@ func capsuledText(_ text: String,
         .foregroundColor(.white)
         .font(.system(size: fontSize))
 }
+
+struct CapsuledText_Preview: PreviewProvider {
+    static var previews: some View {
+        capsuledText("3.4m")
+            .previewLayout(.sizeThatFits)
+    }
+}

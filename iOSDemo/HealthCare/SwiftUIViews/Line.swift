@@ -64,3 +64,10 @@ struct Line: View {
             .frame(width: 1, height: height)
     }
 }
+
+struct Line_Preview: PreviewProvider {
+    static var previews: some View {
+        Line.infinity(.horizontal, color: .red)
+            .offset(y: 30)
+    }
+}
