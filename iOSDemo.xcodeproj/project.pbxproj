@@ -20,6 +20,8 @@
 		5A3E341C27B4F8C700B7904F /* DetectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E341B27B4F8C700B7904F /* DetectRegionView.swift */; };
 		5A3E341E27B4F97C00B7904F /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E341D27B4F97C00B7904F /* Color+Extensions.swift */; };
 		5A3E342027B4F9D400B7904F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E341F27B4F9D400B7904F /* String+Extensions.swift */; };
+		5A3E342527B6570800B7904F /* TouchLocatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E342427B6570800B7904F /* TouchLocatingView.swift */; };
+		5A3E342727B657CB00B7904F /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E342627B657CB00B7904F /* CGRect+Extensions.swift */; };
 		DB06C58327A29E7E002C24E3 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58227A29E7E002C24E3 /* ItemRow.swift */; };
 		DB06C58527A29EB9002C24E3 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58427A29EB9002C24E3 /* OrderView.swift */; };
 		DB06C58727A29EF9002C24E3 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58627A29EF9002C24E3 /* ItemDetail.swift */; };
@@ -57,6 +59,8 @@
 		5A3E341B27B4F8C700B7904F /* DetectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectRegionView.swift; sourceTree = "<group>"; };
 		5A3E341D27B4F97C00B7904F /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		5A3E341F27B4F9D400B7904F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		5A3E342427B6570800B7904F /* TouchLocatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLocatingView.swift; sourceTree = "<group>"; };
+		5A3E342627B657CB00B7904F /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		DB06C58227A29E7E002C24E3 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		DB06C58427A29EB9002C24E3 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		DB06C58627A29EF9002C24E3 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				5A3E342127B4FA8800B7904F /* SwiftUIViews */,
 				5A3E341D27B4F97C00B7904F /* Color+Extensions.swift */,
 				5A3E341F27B4F9D400B7904F /* String+Extensions.swift */,
+				5A3E342627B657CB00B7904F /* CGRect+Extensions.swift */,
 				DBADEB6E27B37F270072E844 /* Wall.swift */,
 			);
 			path = HealthCare;
@@ -118,6 +123,7 @@
 				5A3E341727B4F55F00B7904F /* AngleView.swift */,
 				5A3E341927B4F58D00B7904F /* SubRegionView.swift */,
 				5A3E341B27B4F8C700B7904F /* DetectRegionView.swift */,
+				5A3E342427B6570800B7904F /* TouchLocatingView.swift */,
 				DB7FC76527A911A90095DE18 /* HealthCare+Preview.swift */,
 			);
 			path = SwiftUIViews;
@@ -256,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBADEB6F27B37F270072E844 /* Wall.swift in Sources */,
+				5A3E342527B6570800B7904F /* TouchLocatingView.swift in Sources */,
 				5A3E341827B4F55F00B7904F /* AngleView.swift in Sources */,
 				DBAB22AC27A4D8EE0062DE00 /* ArrowView.swift in Sources */,
 				DB609E4727A13B9600FBFDEE /* UIWindow+Ext.swift in Sources */,
@@ -270,6 +277,7 @@
 				DB609E4F27A13C4300FBFDEE /* Menu.swift in Sources */,
 				5A3E340A27B4F36600B7904F /* Line.swift in Sources */,
 				DB609E5127A13C4300FBFDEE /* Order.swift in Sources */,
+				5A3E342727B657CB00B7904F /* CGRect+Extensions.swift in Sources */,
 				DB06C58727A29EF9002C24E3 /* ItemDetail.swift in Sources */,
 				5A3E341C27B4F8C700B7904F /* DetectRegionView.swift in Sources */,
 				5A3E341027B4F3F900B7904F /* TipsBar.swift in Sources */,
