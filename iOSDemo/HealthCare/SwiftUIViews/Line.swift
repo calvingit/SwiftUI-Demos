@@ -14,7 +14,7 @@ struct Line: View {
     let color: Color
     let lineWidth: CGFloat
 
-    init(_ axes: Axis = .horizontal, color: Color = .divider, lineWidth: CGFloat = 0.5) {
+    init(_ axes: Axis, color: Color, lineWidth: CGFloat) {
         self.axes = axes
         self.color = color
         self.lineWidth = lineWidth
@@ -40,27 +40,27 @@ struct Line: View {
     }
 
     // 长度自动扩展
-    static func infinity(_ axes: Axis = .horizontal, color: Color = .divider) -> some View {
+    static func infinity(_ axes: Axis = .horizontal, color: Color = .divider, lineWidth: CGFloat = 0.5) -> some View {
         switch axes {
             case .horizontal:
-               return Line(axes, color: color)
+               return Line(axes, color: color, lineWidth: lineWidth)
                     .frame(width: .infinity, height: 1)
 
             case .vertical:
-               return Line(axes, color: color)
+               return Line(axes, color: color, lineWidth: lineWidth)
                     .frame(width: 1, height: .infinity)
         }
     }
 
     // 水平，高度为1
-    static func horizontal(_ width: CGFloat, color: Color = .divider) -> some View {
-        Line(.horizontal, color: color)
+    static func horizontal(_ width: CGFloat, color: Color = .divider, lineWidth: CGFloat = 0.5) -> some View {
+        Line(.horizontal, color: color, lineWidth: lineWidth)
             .frame(width: width, height: 1)
     }
 
     // 垂直，宽度为1
-    static func vertical(_ height: CGFloat, color: Color = .divider) -> some View {
-        Line(.vertical, color: color)
+    static func vertical(_ height: CGFloat, color: Color = .divider, lineWidth: CGFloat = 0.5) -> some View {
+        Line(.vertical, color: color, lineWidth: lineWidth)
             .frame(width: 1, height: height)
     }
 }

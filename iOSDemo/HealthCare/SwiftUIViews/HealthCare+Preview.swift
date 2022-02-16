@@ -56,11 +56,7 @@ struct HealthCare: View {
                 }
             }
             
-            HStack(spacing: 0) {
-                Arrow.to(.top)
-                Line(color: .primaryGreen).frame(width: 100, height: 1, alignment: .leading)
-            }
-            
+
             ZStack {
                 DetectRegionView()
                     .frame(width: 100, height: 50, alignment: .topTrailing)

@@ -22,6 +22,18 @@
 		5A3E342027B4F9D400B7904F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E341F27B4F9D400B7904F /* String+Extensions.swift */; };
 		5A3E342527B6570800B7904F /* TouchLocatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E342427B6570800B7904F /* TouchLocatingView.swift */; };
 		5A3E342727B657CB00B7904F /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E342627B657CB00B7904F /* CGRect+Extensions.swift */; };
+		5A8AEEDC27BB431B00AA7A79 /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEDB27BB431B00AA7A79 /* DeviceSettingsView.swift */; };
+		5A8AEEDE27BB4A8C00AA7A79 /* ChevronRightArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEDD27BB4A8C00AA7A79 /* ChevronRightArrow.swift */; };
+		5A8AEEE027BB83F800AA7A79 /* SubRegionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEDF27BB83F800AA7A79 /* SubRegionSettingsView.swift */; };
+		5A8AEEEB27BB962D00AA7A79 /* PageViewController+UIPageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE227BB962D00AA7A79 /* PageViewController+UIPageViewDelegate.swift */; };
+		5A8AEEEC27BB962D00AA7A79 /* PageViewController+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE327BB962D00AA7A79 /* PageViewController+UIScrollViewDelegate.swift */; };
+		5A8AEEED27BB962D00AA7A79 /* iPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE427BB962D00AA7A79 /* iPages.swift */; };
+		5A8AEEEE27BB962D00AA7A79 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE527BB962D00AA7A79 /* PageControl.swift */; };
+		5A8AEEEF27BB962D00AA7A79 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE627BB962D00AA7A79 /* Typealiases.swift */; };
+		5A8AEEF027BB962D00AA7A79 /* iPages+ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE727BB962D00AA7A79 /* iPages+ViewModifiers.swift */; };
+		5A8AEEF127BB962D00AA7A79 /* PageViewController+NSPageControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE827BB962D00AA7A79 /* PageViewController+NSPageControllerDelegate.swift */; };
+		5A8AEEF227BB962D00AA7A79 /* Decomposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEE927BB962D00AA7A79 /* Decomposable.swift */; };
+		5A8AEEF327BB962D00AA7A79 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AEEEA27BB962D00AA7A79 /* PageViewController.swift */; };
 		DB06C58327A29E7E002C24E3 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58227A29E7E002C24E3 /* ItemRow.swift */; };
 		DB06C58527A29EB9002C24E3 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58427A29EB9002C24E3 /* OrderView.swift */; };
 		DB06C58727A29EF9002C24E3 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06C58627A29EF9002C24E3 /* ItemDetail.swift */; };
@@ -61,6 +73,18 @@
 		5A3E341F27B4F9D400B7904F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		5A3E342427B6570800B7904F /* TouchLocatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLocatingView.swift; sourceTree = "<group>"; };
 		5A3E342627B657CB00B7904F /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		5A8AEEDB27BB431B00AA7A79 /* DeviceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsView.swift; sourceTree = "<group>"; };
+		5A8AEEDD27BB4A8C00AA7A79 /* ChevronRightArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronRightArrow.swift; sourceTree = "<group>"; };
+		5A8AEEDF27BB83F800AA7A79 /* SubRegionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRegionSettingsView.swift; sourceTree = "<group>"; };
+		5A8AEEE227BB962D00AA7A79 /* PageViewController+UIPageViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageViewController+UIPageViewDelegate.swift"; sourceTree = "<group>"; };
+		5A8AEEE327BB962D00AA7A79 /* PageViewController+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageViewController+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		5A8AEEE427BB962D00AA7A79 /* iPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPages.swift; sourceTree = "<group>"; };
+		5A8AEEE527BB962D00AA7A79 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		5A8AEEE627BB962D00AA7A79 /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		5A8AEEE727BB962D00AA7A79 /* iPages+ViewModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iPages+ViewModifiers.swift"; sourceTree = "<group>"; };
+		5A8AEEE827BB962D00AA7A79 /* PageViewController+NSPageControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageViewController+NSPageControllerDelegate.swift"; sourceTree = "<group>"; };
+		5A8AEEE927BB962D00AA7A79 /* Decomposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decomposable.swift; sourceTree = "<group>"; };
+		5A8AEEEA27BB962D00AA7A79 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		DB06C58227A29E7E002C24E3 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		DB06C58427A29EB9002C24E3 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		DB06C58627A29EF9002C24E3 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
@@ -125,13 +149,33 @@
 				5A3E341B27B4F8C700B7904F /* DetectRegionView.swift */,
 				5A3E342427B6570800B7904F /* TouchLocatingView.swift */,
 				DB7FC76527A911A90095DE18 /* HealthCare+Preview.swift */,
+				5A8AEEDB27BB431B00AA7A79 /* DeviceSettingsView.swift */,
+				5A8AEEDF27BB83F800AA7A79 /* SubRegionSettingsView.swift */,
+				5A8AEEDD27BB4A8C00AA7A79 /* ChevronRightArrow.swift */,
 			);
 			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		5A8AEEE127BB962D00AA7A79 /* iPages */ = {
+			isa = PBXGroup;
+			children = (
+				5A8AEEE227BB962D00AA7A79 /* PageViewController+UIPageViewDelegate.swift */,
+				5A8AEEE327BB962D00AA7A79 /* PageViewController+UIScrollViewDelegate.swift */,
+				5A8AEEE427BB962D00AA7A79 /* iPages.swift */,
+				5A8AEEE527BB962D00AA7A79 /* PageControl.swift */,
+				5A8AEEE627BB962D00AA7A79 /* Typealiases.swift */,
+				5A8AEEE727BB962D00AA7A79 /* iPages+ViewModifiers.swift */,
+				5A8AEEE827BB962D00AA7A79 /* PageViewController+NSPageControllerDelegate.swift */,
+				5A8AEEE927BB962D00AA7A79 /* Decomposable.swift */,
+				5A8AEEEA27BB962D00AA7A79 /* PageViewController.swift */,
+			);
+			path = iPages;
 			sourceTree = "<group>";
 		};
 		DB609E5227A13C6C00FBFDEE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5A8AEEE127BB962D00AA7A79 /* iPages */,
 				DB609E4827A13BCC00FBFDEE /* Then.swift */,
 				DB609E4627A13B9600FBFDEE /* UIWindow+Ext.swift */,
 				DBE9AE9A278AC7BA000D2C38 /* HostingView.swift */,
@@ -263,18 +307,22 @@
 			files = (
 				DBADEB6F27B37F270072E844 /* Wall.swift in Sources */,
 				5A3E342527B6570800B7904F /* TouchLocatingView.swift in Sources */,
+				5A8AEEEC27BB962D00AA7A79 /* PageViewController+UIScrollViewDelegate.swift in Sources */,
 				5A3E341827B4F55F00B7904F /* AngleView.swift in Sources */,
 				DBAB22AC27A4D8EE0062DE00 /* ArrowView.swift in Sources */,
 				DB609E4727A13B9600FBFDEE /* UIWindow+Ext.swift in Sources */,
 				5A3E341E27B4F97C00B7904F /* Color+Extensions.swift in Sources */,
 				DB06C58927A2AF5D002C24E3 /* MainView.swift in Sources */,
+				5A8AEEE027BB83F800AA7A79 /* SubRegionSettingsView.swift in Sources */,
 				DB06C58527A29EB9002C24E3 /* OrderView.swift in Sources */,
+				5A8AEEED27BB962D00AA7A79 /* iPages.swift in Sources */,
 				5A3E341A27B4F58D00B7904F /* SubRegionView.swift in Sources */,
 				5A3E340827B4F2F500B7904F /* CapsuledText.swift in Sources */,
 				5A3E340C27B4F39600B7904F /* MarginView.swift in Sources */,
 				5A3E342027B4F9D400B7904F /* String+Extensions.swift in Sources */,
 				DB7FC76627A911A90095DE18 /* HealthCare+Preview.swift in Sources */,
 				DB609E4F27A13C4300FBFDEE /* Menu.swift in Sources */,
+				5A8AEEDE27BB4A8C00AA7A79 /* ChevronRightArrow.swift in Sources */,
 				5A3E340A27B4F36600B7904F /* Line.swift in Sources */,
 				DB609E5127A13C4300FBFDEE /* Order.swift in Sources */,
 				5A3E342727B657CB00B7904F /* CGRect+Extensions.swift in Sources */,
@@ -283,11 +331,19 @@
 				5A3E341027B4F3F900B7904F /* TipsBar.swift in Sources */,
 				5A3E340E27B4F3B800B7904F /* GridBackground.swift in Sources */,
 				DBE9AE85278AC42B000D2C38 /* AppDelegate.swift in Sources */,
+				5A8AEEDC27BB431B00AA7A79 /* DeviceSettingsView.swift in Sources */,
 				DBE9AE87278AC42B000D2C38 /* SceneDelegate.swift in Sources */,
+				5A8AEEF127BB962D00AA7A79 /* PageViewController+NSPageControllerDelegate.swift in Sources */,
 				5A3E341227B4F46600B7904F /* OuterBorder.swift in Sources */,
+				5A8AEEEE27BB962D00AA7A79 /* PageControl.swift in Sources */,
 				5A3E341427B4F4CF00B7904F /* Arrow.swift in Sources */,
 				DB609E5527A13DE300FBFDEE /* ContentView.swift in Sources */,
+				5A8AEEEF27BB962D00AA7A79 /* Typealiases.swift in Sources */,
+				5A8AEEF027BB962D00AA7A79 /* iPages+ViewModifiers.swift in Sources */,
+				5A8AEEF327BB962D00AA7A79 /* PageViewController.swift in Sources */,
 				DB609E4927A13BCC00FBFDEE /* Then.swift in Sources */,
+				5A8AEEF227BB962D00AA7A79 /* Decomposable.swift in Sources */,
+				5A8AEEEB27BB962D00AA7A79 /* PageViewController+UIPageViewDelegate.swift in Sources */,
 				DB06C58B27A2B471002C24E3 /* CheckoutView.swift in Sources */,
 				DB06C58327A29E7E002C24E3 /* ItemRow.swift in Sources */,
 				DBE9AE9B278AC7BA000D2C38 /* HostingView.swift in Sources */,
