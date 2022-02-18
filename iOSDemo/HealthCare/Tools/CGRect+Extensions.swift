@@ -17,6 +17,10 @@ extension CGRect {
         get { origin.y }
         set { origin = CGPoint(x: origin.x, y: newValue) }
     }
+
+    var center: CGPoint {
+        CGPoint(x: origin.x + width / 2, y: origin.y + height / 2)
+    }
 }
 
 extension CGRect {
@@ -34,10 +38,6 @@ extension CGRect {
     mutating func centerTo(_ center: CGPoint) {
         self = CGRect(center: center, width: width, height: height)
     }
-
-//    mutating func trim(width: CGFloat, height: height) {
-//        self =
-//    }
 
 }
 

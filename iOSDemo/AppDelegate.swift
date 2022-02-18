@@ -14,7 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
+        let rect = CGRect(center: CGPoint(x: 150, y: 150), width: 100, height: 100)
+        print("\(rect)")
+        print("\(rect.center)")
+        print("\(rect.x), \(rect.y)")
         return true
     }
 

@@ -23,7 +23,7 @@ struct ArrowLine: View {
             let pWidth = reader.size.width
             let pHeight = reader.size.height
 
-        switch axes {
+            switch axes {
             case .horizontal:
                 VStack(spacing: 0)  {
                     HStack(spacing: 0) {
@@ -37,7 +37,8 @@ struct ArrowLine: View {
                     }
                     // 宽度太小了，不显示
                     if pWidth > 35 {
-                        capsuledText(text, fontSize: 8)
+                        Text(text)
+                            .capsuledStyle(fontSize: 8)
                     }
                 }
 
@@ -50,7 +51,8 @@ struct ArrowLine: View {
                     Line.infinity(.vertical, color: .primaryGreen)
 
                     if pHeight > 26 {
-                        capsuledText(text, fontSize: 8)
+                        Text(text)
+                            .capsuledStyle(fontSize: 8)
                         Line.infinity(.vertical, color: .primaryGreen)
                     }
 
@@ -58,7 +60,22 @@ struct ArrowLine: View {
                         Arrow.to(.bottom)
                     }
                 }
-        }
+            }
         }
     }
 }
+
+#if DEBUG
+struct ArrowLine_Preview: PreviewProvider {
+    static var previews: some View {
+        VStack(alignment: .center) {
+            ArrowLine(.horizontal, text: "2.3m")
+                .frame(width: 200, height: 30)
+
+            ArrowLine(.vertical, text: "2.3m")
+                .frame(height: 100)
+                .offset(x: 100, y: 0)
+        }
+    }
+}
+#endif

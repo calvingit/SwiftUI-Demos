@@ -43,10 +43,21 @@ struct TipsBar: View {
                 //
             } label: {
                 Image(systemName: "questionmark.circle")
-                    .foregroundColor(wallColor)
+                    .resizable()
+                    .renderingMode(.template)
+                    .accentColor(.primaryGreen)
                     .frame(width: 16, height: 16)
             }
 
         }
     }
 }
+
+#if DEBUG
+struct TipsBar_Preview: PreviewProvider {
+    static var previews: some View {
+        TipsBar()
+            .frame(width: 200, alignment: .center)
+    }
+}
+#endif

@@ -7,20 +7,23 @@
 
 import SwiftUI
 
-// 圆角背景白色文本
-func capsuledText(_ text: String,
-                  backgroundColor: Color = .primaryGreen,
-                  fontSize: CGFloat = 10.0) -> some View {
-    Text(text)
-        .padding(EdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5))
-        .background(Capsule().fill(backgroundColor))
-        .foregroundColor(.white)
-        .font(.system(size: fontSize))
+extension Text {
+    // 圆角背景白色文本
+    func capsuledStyle(backgroundColor: Color = .primaryGreen,
+                       fontSize: CGFloat = 10.0) -> some View {
+        self.padding(EdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5))
+            .background(Capsule().fill(backgroundColor))
+            .foregroundColor(.white)
+            .font(.system(size: fontSize))
+    }
 }
 
+#if DEBUG
 struct CapsuledText_Preview: PreviewProvider {
     static var previews: some View {
-        capsuledText("3.4m")
+        Text("3.4m")
+            .capsuledStyle()
             .previewLayout(.sizeThatFits)
     }
 }
+#endif

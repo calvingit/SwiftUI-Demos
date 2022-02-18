@@ -48,3 +48,20 @@ struct Arrow: View {
             .frame(width: 6, height: 6)
     }
 }
+
+#if DEBUG
+struct Arrow_Preview: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            Arrow()
+                .frame(width: 40, height: 40)
+            Arrow(.trailing, color: .red)
+                .frame(width: 40, height: 40)
+            Arrow(.top, color: .green)
+                .frame(width: 40, height: 40)
+            Arrow(.bottom, color: .purple)
+                .frame(width: 40, height: 40)
+        }
+    }
+}
+#endif

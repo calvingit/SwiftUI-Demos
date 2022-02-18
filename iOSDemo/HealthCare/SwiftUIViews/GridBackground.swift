@@ -18,13 +18,15 @@ struct GridBackground: View {
             let h = reader.size.height
 
             // 竖线
-            ForEach(3..<Int(w/l)) { i in
+            let maxW = Int(w/l) + 1
+            ForEach(0..<maxW) { i in
                 drawLine(CGPoint(x: CGFloat(i) * l , y: 0),
                          end: CGPoint(x: CGFloat(i) * l , y: h))
             }
 
             // 横线
-            ForEach(3..<Int(h/l)) { i in
+            let maxH = Int(h/l) + 1
+            ForEach(0..<maxH) { i in
                 drawLine(CGPoint(x: 0 , y: CGFloat(i) * l),
                          end: CGPoint(x: w , y: CGFloat(i) * l))
             }
@@ -50,3 +52,13 @@ struct GridBackground: View {
         )
     }
 }
+
+#if DEBUG
+struct GridBackground_Preview: PreviewProvider {
+    static var previews: some View {
+        GridBackground()
+            .frame(width: 200, height: 100, alignment: .center)
+            .background(Color.red)
+    }
+}
+#endif

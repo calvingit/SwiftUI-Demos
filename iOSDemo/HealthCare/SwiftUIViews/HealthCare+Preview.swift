@@ -21,10 +21,10 @@ struct HealthCare: View {
             GeometryReader { _ in
                 HStack(alignment: .center) {
                     VStack(alignment: .leading, spacing: 0) {
-                        TipsBar()
-                            .frame(width: roomWidth + marginWidth, height: 24)
-                            .padding(.leading, 5)
-                        
+//                        TipsBar()
+//                            .frame(width: roomWidth + marginWidth, height: 24)
+//                            .padding(.leading, 5)
+//
                         OuterBorder("A", color: .init(0xC6AD9D)).frame(width: roomWidth + marginWidth * 2, height: marginWidth)
                         
                         HStack(alignment: .center,spacing: 0) {
@@ -43,19 +43,11 @@ struct HealthCare: View {
                 }
             }
             .frame(width: roomWidth + 80, height: roomHeight + 80, alignment: .center)
-            //.background(Color.red)
             .padding(EdgeInsets(top: 80, leading: 60, bottom: 0, trailing: 0))
             
             Divider()
                 .background(Color.red)
                 .frame(width: .infinity, height: 1, alignment: .top)
-            
-            HStack {
-                ForEach(Edge.allCases, id: \.self) { item in
-                    Arrow(item).frame(width: 6, height: 6, alignment: .top)
-                }
-            }
-            
 
             ZStack {
                 DetectRegionView()

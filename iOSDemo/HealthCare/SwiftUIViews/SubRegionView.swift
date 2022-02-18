@@ -30,43 +30,37 @@ struct SubRegionView: View {
     }
 
     var body: some View {
-        GeometryReader { geometry in
-//            let pWidth = geometry.size.width
-//            let pHeight = geometry.size.height
+        ZStack(alignment: .topLeading) {
+            Rectangle()
+                .fill(Color.white)
+                .frame(width: regionFrame.width, height: regionFrame.height)
+                .border(Color.primaryGreen)
+                .position(regionFrame.center)
 
-            ZStack(alignment: .topLeading) {
+            if let widthText = widthText {
+                lengthText(widthText)
+                    .offset(x: regionFrame.x + regionFrame.width/2 - 5, y: regionFrame.y + regionFrame.height)
+            }
 
-                Rectangle()
-                    .fill(Color.white)
-                    .frame(width: regionFrame.width, height: regionFrame.height, alignment: .topLeading)
-                    .border(Color.primaryGreen)
-                    .offset(x: regionFrame.minX, y: regionFrame.minY)
+            if let heightText = heightText {
+                lengthText(heightText)
+                    .offset(x: regionFrame.x + regionFrame.width + 2, y: regionFrame.y + regionFrame.height/2 - 5)
+            }
 
+            if let name = name {
+                centerTitle(name)
+            }
 
-                if let widthText = widthText {
-                    lengthText(widthText)
-                        .offset(x: regionFrame.minX + regionFrame.width/2 - 5, y: regionFrame.minY + regionFrame.height)
-                }
+            ArrowLine(.horizontal, text: "3.3m")
+                .frame(width: regionFrame.x,  alignment: .leading)
+                .offset(x: 0,y: regionFrame.y + regionFrame.height / 2)
 
-                if let heightText = heightText {
-                    lengthText(heightText)
-                        .offset(x: regionFrame.minX + regionFrame.width + 2, y: regionFrame.minY + regionFrame.height/2 - 5)
-                }
+            ArrowLine(.vertical, text: "4.3m")
+                .frame(height: regionFrame.y, alignment: .top)
+                .offset(x: regionFrame.x + regionFrame.width / 2 - 13)
 
-                if let name = name {
-                    centerTitle(name)
-                }
-
-                ArrowLine(.horizontal, text: "3.3m")
-                    .frame(width: regionFrame.minX,  alignment: .leading)
-                    .offset(x: 0,y: regionFrame.minY + regionFrame.height / 2)
-
-                ArrowLine(.vertical, text: "4.3m")
-                    .frame(height: regionFrame.minY)
-                    .offset(x: regionFrame.minX + regionFrame.width / 2 - 13)
-                if isSelected {
-                    anchors()
-                }
+            if isSelected {
+                anchors()
             }
         }
     }
@@ -80,25 +74,42 @@ struct SubRegionView: View {
 
     // 名称
     func centerTitle(_ name: String) -> some View {
-        let centerY = regionFrame.minY + regionFrame.height / 2
-        let centerX = regionFrame.minX + regionFrame.width / 2
+        let centerY = regionFrame.y + regionFrame.height / 2
+        let centerX = regionFrame.x + regionFrame.width / 2
         let nameRect = name.sizeOf(.systemFont(ofSize: 10))
         return Text(name)
             .font(.system(size: 10))
             .offset(x: centerX - nameRect.width/2, y: centerY - nameRect.height / 2)
     }
 
+    // 四个角
     func anchors() -> some View {
         let centers = [
-            CGPoint(x: regionFrame.minX, y: regionFrame.minY),
-            CGPoint(x: regionFrame.minX + regionFrame.width, y: regionFrame.minY),
-            CGPoint(x: regionFrame.minX, y: regionFrame.minY  + regionFrame.height),
-            CGPoint(x: regionFrame.minX + regionFrame.width, y: regionFrame.minY + regionFrame.height),
+            CGPoint(x: regionFrame.x, y: regionFrame.y),
+            CGPoint(x: regionFrame.x + regionFrame.width, y: regionFrame.y),
+            CGPoint(x: regionFrame.x, y: regionFrame.y  + regionFrame.height),
+            CGPoint(x: regionFrame.x + regionFrame.width, y: regionFrame.y + regionFrame.height),
         ]
 
         return  ForEach([0,1,2,3], id: \.self) { index in
-
-            AngleView(point: centers[index])
+            AngleView(center: centers[index], radius: 8)
         }
     }
 }
+
+#if DEBUG
+struct SubRegionView_Preview: PreviewProvider {
+    static var previews: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            GeometryReader { _ in
+                SubRegionView(CGRect(center: CGPoint(x: 150, y: 150), width: 100, height: 100), name: "客厅", widthText: "2.3", heightText: "3.4", isSelected: true)
+
+            }
+            .frame(width: 300, height: 300)
+
+        }
+        .background(Color.gray)
+        //.previewLayout(.sizeThatFits)
+    }
+}
+#endif

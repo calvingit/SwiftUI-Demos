@@ -35,7 +35,7 @@ struct SubRegionTag: View {
 }
 
 struct SubRegionSettingsPage: View {
-    @State var name: String = "排除区域1"
+    @State var name: String = ""
     @State var length: String = "2"
     @State var width: String = "2"
     @State var distanceToA: String = "2"
@@ -44,16 +44,12 @@ struct SubRegionSettingsPage: View {
     var body: some View {
         VStack(alignment:.leading, spacing: 0) {
 
-            TextField("", text: $name)
-                .withNameCell(title: "名称")
-            TextField("", text: $length)
-                .withDistanceCell(title: "长度")
-            TextField("", text: $width)
-                .withDistanceCell(title: "宽度")
-            TextField("", text: $distanceToA)
-                .withDistanceCell(title: "墙A距离")
-            TextField("", text: $distanceToB)
-                .withDistanceCell(title: "墙B距离")
+            NameTextFieldCell(title: "名称", text:name, placeHolder: "请输入名称")
+            DistanceTextfieldCell(title: "长度", text: length)
+            DistanceTextfieldCell(title: "宽度", text: width)
+
+            DistanceTextfieldCell(title: "墙A距离", text: distanceToA)
+            DistanceTextfieldCell(title: "墙B距离", text: distanceToB)
         }
     }
 }

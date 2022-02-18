@@ -19,12 +19,23 @@ struct OuterBorder: View {
     }
 
     var body: some View {
-        ZStack(alignment: .center) {
-            Rectangle()
-                .fill(color)
-            Text(text)
-                .foregroundColor(.black)
-                .font(.system(size: 8))
+        Rectangle()
+            .fill(color)
+            .overlay (
+                Text(text)
+                    .foregroundColor(.black)
+                    .font(.system(size: 8))
+            )
+    }
+}
+
+#if DEBUG
+struct OuterBorder_Preview: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            OuterBorder("2.3m")
+                .frame(width: 200, height: 10, alignment: .center)
         }
     }
 }
+#endif

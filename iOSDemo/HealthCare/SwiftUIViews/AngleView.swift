@@ -9,15 +9,26 @@ import SwiftUI
 
 // 选中区域的四个角
 struct AngleView: View {
-    // 半径
-    let radius: CGFloat = 8
     // 选中区域的四个角位置
-    let point: CGPoint
+    let center: CGPoint
+    // 半径
+    let radius: CGFloat
 
     var body: some View {
         Circle()
             .fill(Color.red)
             .frame(width: radius * 2, height: radius * 2, alignment: .topLeading)
-            .offset(x: point.x - radius, y: point.y - radius)
+            .position(x: center.x, y: center.y)
     }
 }
+
+#if DEBUG
+struct AngleView_Preview: PreviewProvider {
+    static var previews: some View {
+        ZStack(alignment: .leading) {
+            AngleView(center: CGPoint(x: 80, y: 80), radius: 60)
+
+        }
+    }
+}
+#endif
